@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<title>Test</title>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<h1>Upgrade to Customize Your Achieve Client App</h1>
+			<p class="header-info">
+				Choose a plan to get an access to customization settings:
+			</p>
+		</header>
+		<section>
+			<div class="product-card">
+				<div class="form-wrapper">
+					<img id="logo-popular" src="popular.png" alt="popular">
+					<h2><span class="blue">pro</span></h2>
+					<h3>$40/month</h3>
+					<form action="#" id="form1">
+						<h4>Everything included in <span class="yellow">Basic</span> plus:</h4>
+						<div class="checkbox-form-1"><input type="checkbox" id="checkbox1" value="checkbox1" onchange="changeBtn1(this)"><label for="checkbox1">Configure Colors and Splash Screen</label>
+						</div>
+						<div class="checkbox-form-1"><input type="checkbox" id="checkbox2" value="checkbox2" onchange="changeBtn1(this)"><label for="checkbox2">Configure Colors and Splash Screen</label>
+						</div>
+						<div class="checkbox-form-1"><input type="checkbox" id="checkbox3" value="checkbox3" onchange="changeBtn1(this)"><label for="checkbox3">Configure Colors and Splash Screen</label>
+						</div>
+						<div class="checkbox-form-1"><input type="checkbox" id="checkbox4" value="checkbox4" onchange="changeBtn1(this)"><label for="checkbox4">Configure Colors and Splash Screen</label>
+						</div>
+						<button class="btn btn-blue" id="submit1" disabled><a href="#">buy now</a>
+						</button>
+					</form>
+				</div>
+				<div class="photo-iphones">
+					<img id="iphone1" src="iphone1.png" alt="iphone">
+					<img id="#iphone2" src="iphone2.png" alt="iphone">
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</section>
+		<section>
+			<div class="product-card">
+				<div class="form-wrapper">
+					<h2><span class="green">Enterprise</span></h2>
+					<h3>$60/month</h3>
+					<form action="#">
+						<h4>Everything included in <span class="blue">pro</span> plus:</h4>
+						<div class="checkbox-form-2"><input type="checkbox" id="checkbox5" value="checkbox5" onchange="changeBtn2(this)"><label for="checkbox5">Configure Colors and Splash Screen</label>
+						</div>
+						<div class="checkbox-form-2"><input type="checkbox" id="checkbox6" value="checkbox6" onchange="changeBtn2(this)"><label for="checkbox6">Configure Colors and Splash Screen</label>
+						</div>
+						<button class="btn btn-blue" id="submit2" disabled><a href="#">buy now</a>
+						</button>
+					</form>
+				</div>
+				<div class="photo-iphones">
+					<img id="iphone1" src="iphone1.png" alt="iphone">
+					<img id="#iphone2" src="iphone2.png" alt="iphone">
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</section>
+	</div>
+	<!-- <script>
+		function change() {
+				document.getElementById('submit1').removeAttribute('disabled', '');
+				document.getElementById('submit1').removeAttribute('class', 'btn-blue');
+				document.getElementById('submit1').setAttribute('class', 'btn-enabled');
+			
+		}
+	</script> -->
+	<script>
+		function changeBtn1(checkbox) {
+			if (checkbox.checked == true) {
+				document.getElementById('submit1').removeAttribute('disabled', '');
+				document.getElementById('submit1').removeAttribute('class', 'btn');
+				document.getElementById('submit1').setAttribute('class', 'btn-enabled');
+			}
+			else {
+				document.getElementById('submit1').setAttribute('disabled', '');
+				document.getElementById('submit1').removeAttribute('class', 'btn-enabled');
+				document.getElementById('submit1').setAttribute('class', 'btn');
+			}
+		}
+	</script>
+	<script>
+		function changeBtn2(checkbox) {
+			if (checkbox.checked == true) {
+				document.getElementById('submit2').removeAttribute('disabled', '');
+				document.getElementById('submit2').removeAttribute('class', 'btn');
+				document.getElementById('submit2').setAttribute('class', 'btn-enabled');
+			}
+			else {
+				document.getElementById('submit2').setAttribute('disabled', '');
+				document.getElementById('submit2').removeAttribute('class', 'btn-enabled');
+				document.getElementById('submit2').setAttribute('class', 'btn');
+			}
+		}
+	</script>
+</body>
+</html>

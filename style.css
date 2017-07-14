@@ -1,0 +1,214 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+html {
+	font-size: 16px;
+}
+section {
+	width: 100%;
+	max-width: 100%;
+	padding-top: 1px;
+}
+header {
+	padding: 1rem;
+}
+header p {
+	margin: 1rem;
+	text-align: center;
+}
+h1 {
+	text-align: center;
+	color: rgb(170, 170, 170);
+}
+h2 {
+	text-transform: uppercase;
+}
+h3 {
+	margin-top: 27px;
+	font-size: 2rem;
+}
+h4 {
+	margin-top: 65px;
+}
+form {
+	width: 100%;
+	max-width: 100%;
+}
+label {
+	display: inline-block;
+	width: 100%;
+	min-width: 100%;
+	cursor: pointer;
+	position: relative;
+	padding-left: 25px;
+	margin-right: 15px;
+	font-size: 1.5rem;
+	color: rgb(232, 232, 232);
+}
+section {
+	position: relative;
+}
+input {
+	margin-top: 1rem;
+}
+.container {
+	max-width: 1280px;
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+.header-info {
+	color: rgb(188, 188, 188);
+	font-size: 1.5rem;
+}
+.product-card {
+	margin-top: 59px;
+	width: 90%;
+	max-width: 100%;
+	margin-left: 10%;
+	padding-top: 60px;
+	padding-left: 55px;
+	padding-right: 100px;
+	padding-bottom: 50px;
+	background: rgb(251, 251, 251);
+}
+.form-wrapper {
+	width: 45%;
+	max-width: 100%;
+	float: left;
+}
+.photo-iphones {
+	width: 55%;
+	max-width: 100%;
+	float: left;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.photo-iphones img {
+	width: 230px;
+	height: 460px;
+	max-width: 100%;
+	max-height: 100%;
+}
+#form1 {
+	margin-top: 1rem;
+	width: 100%;
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.checkbox-form-1 {
+	margin-top: 20px;
+	width: 100%;
+	min-width: 100%;
+}
+.checkbox-form-1 input {
+   display: none;
+}
+.checkbox-form-1 label::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 5px;
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	border: 1px solid grey;
+	border-radius: 50%;
+	background: #fff;
+}
+.checkbox-form-2 {
+	margin-top: 20px;
+}
+.checkbox-form-2 input {
+   display: none;
+}
+.checkbox-form-2 label::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 5px;
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	border: 1px solid grey;
+	border-radius: 50%;
+	background: #fff;
+}
+input:checked + label::before {
+	 content: "\2713";
+	 text-align: center;
+	 text-shadow: 1px 1px 1px;
+	 line-height: 1rem;
+	 font-size: 0.7rem;
+}
+input:checked + label {
+	color: rgb(192, 192, 192);
+}
+.yellow {
+	color: rgb(255, 247, 58);
+}
+.green {
+	color: rgb(143, 199, 36);
+}
+.blue {
+	color: rgb(42, 192, 224);
+}
+.btn {
+	margin-top: 41px;
+	width: 292px;
+	max-width: 90%;
+	min-height: 64px;
+	text-transform: uppercase;
+	border: 1px solid rgb(56, 154, 202);
+	background: rgb(135, 181, 204);
+
+}
+button a {
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-decoration: none;
+}
+#iphone2 {
+	margin-left: 96px;
+}
+.clearfix {
+	clear: both;
+}
+#logo-popular {
+	position: absolute;
+	left: 89%;
+	top: 7%;
+	width: 12%;
+	max-width: 100%;
+}
+.btn-enabled {
+	background: rgb(56, 154, 202);
+	margin-top: 41px;
+	width: 292px;
+	max-width: 90%;
+	min-height: 64px;
+	text-transform: uppercase;
+}
+
+@media all and (max-width: 1420px) {
+
+	.container {
+		width: 90%;
+		min-width: 90%;
+	}
+	
+	.product-card {
+		padding: 2rem;
+	}
+	.photo-iphones img {
+	width: 40%;
+	height: 80%;
+	}
+
+}
