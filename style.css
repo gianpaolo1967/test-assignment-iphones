@@ -202,7 +202,7 @@ button a {
 
 	.container {
 		width: 90%;
-		min-width: 90%;
+		max-width: 90%;
 	}
 	label {
 		font-size: 1.2rem;
@@ -216,6 +216,13 @@ button a {
 		height: 90%;
 	}
 
+}
+@media all and (max-width: 1280px) {
+	
+	.container {
+		margin-right: 5%;
+		margin-left: 5%;
+	}
 }
 
 @media all and (max-width: 980px) {
@@ -234,6 +241,7 @@ button a {
 }
 
 @media all and (max-width: 850px) {
+
 	
 	.form-wrapper {
 		width: 100%;
@@ -243,6 +251,7 @@ button a {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+		background: #fff;
 	}
 	.photo-iphones {
 		width: 90%;
